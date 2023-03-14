@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+form {
+  text-align: center;
+}
+.input {
+  width: 100%;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+}
+.main {
+  display: block;
+  margin: auto;
+}
+.sa-weather {
+  font-size: 25px;
+}
+.weather-top {
+  padding: 20px;
+}
+.day {
+  height: 160px;
+  width: 150px;
+  padding: 20px;
+  text-align: center;
+}
+#celcius:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+#farenheit:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}

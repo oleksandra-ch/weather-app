@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body></body>
+</html>
+<form id="search-form">
+  <input type="text" name="name"  id="search-text-input" required style="width: 90%" 
+  placeholder="Search for a city" 
+  autocomplete="off" 
+  autofocus="on"
+  />
+
+ <input type="submit" value="search" />
+
+</form>
+<h1 id="city"> </h1>
+<div
+  class="card mb-3 main weather-top"
+  style="max-width: 540px; text-align: center"
+>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <p class="card-text sa-weather"> <span id="dayToday">
+        <strong>Sa</strong> </span>
+        </p>
+        <div id="currentTime">
+        Time
+        </div>
+        <span id="temperature"></span>
+       <span>C°</span>
+      </p>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Today</h5>
+        <p class="card-text">
+          Generally clear. <br />
+          High 12ºC. <br />
+          Winds W at 10 to 15 km/h.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-5">
+  <div class="col">
+    <div class="card day">
+      <div class="card-body">
+        <h5 class="card-title">Mo</h5>
+        <p class="card-text">
+          🌤 <br />
+          7°
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card day">
+      <div class="card-body">
+        <h5 class="card-title">Tu</h5>
+        <p class="card-text">🌤 <br />10°</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card day">
+      <div class="card-body">
+        <h5 class="card-title">We</h5>
+        <p class="card-text">🌤 <br />6°</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card day">
+      <div class="card-body">
+        <h5 class="card-title">Th</h5>
+        <p class="card-text">🌤 <br />12°</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card day">
+      <div class="card-body">
+        <h5 class="card-title">Fr</h5>
+        <p class="card-text">🌤 <br />11°</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="src/index.js"></script>
